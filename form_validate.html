@@ -24,25 +24,39 @@
         </label>
         <label for="field2">Только кот<input type="text" id="field2" required
           pattern="cat|кот"></label>
-        <label for="field3">Дата в правильном формате<input type="text" id="field3" required
+        <label for="field3">Дата в правильном формате<input type="date"
+          id="field3" required
         pattern="^[0-3][0-9].[0-1][2].2018 ([0-2][0-9]:)+[0-2][0-9]$"></label>
-        <label for="field4">Важная опция<input type="text" id="field4" required></label>
-        <label for="field5">Важная опция<input type="text" id="field5" required></label>
-        <label for="field6">Важная опция<input type="text" id="field6" required></label>
-        <label for="field7">Важная опция<input type="text" id="field7" required></label>
-        <label for="field8">Важная опция<input type="text" id="field8" oninput="test(this)"></label>
+        <label for="field4">Важный цвет<input type="color" id="field4"
+          required></label>
+        <label for="field5">Важная опция<input type="text" id="field5"
+          required></label>
+        <label for="field6">Важная опция<input type="text" id="field6"
+          required></label>
+        <label for="field7">Важная опция<input type="text" id="field7"
+          required contenteditable="true"></label>
+        <label for="field8">Важная опция<input type="text" id="field8"
+          oninput="test(this)"></label>
         <input type="submit" name="23" value="Отправить" >
         <input type="reset" name="32" value="Очистить">
       </legend>
     </fieldset>
   </form>
+  <div contenteditable="true">Lorem ipsum dolor sit amet,
+    consectetur adipisicing elit. Labore deserunt magnam necessitatibus nam,
+    voluptatem perferendis placeat odio vel, blanditiis praesentium a nemo
+    officiis illo illum maxime! Voluptate quaerat eligendi voluptates!</div>
+    <div designMode="true">Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Labore deserunt magnam necessitatibus nam,
+      voluptatem perferendis placeat odio vel, blanditiis praesentium a nemo
+      officiis illo illum maxime! Voluptate quaerat eligendi voluptates!</div>
 </body>
 <script type="text/javascript">
 function trimQuote(val){
   var result = val.replace( /^['"]/g,"" ).replace( /['"]$/g,"" )
   return result;
 }
-alert(trimQuote("'Data'"))
+// alert(trimQuote("'Data'"))
 function isDigit(val){
   return /^\d+$/.test(val);
 }
